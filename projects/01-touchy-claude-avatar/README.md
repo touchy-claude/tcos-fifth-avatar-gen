@@ -45,3 +45,12 @@ against its own documented `CLI_CONTRACT.md` -- all fixed in
 This PNG is not (yet) the account's actual GitHub avatar -- GitHub's API has
 no endpoint to upload one, and no browser-automation tool was available to
 do it through the web UI. It's parked here until that gets done by hand.
+
+**Update:** the first render clipped badly in GitHub's own crop-to-circle
+upload dialog -- the triangle's top corners and the corner-dot badge both
+fell outside the inscribed circle GitHub crops a square avatar to. That was
+a real bug in `mt-logo-render` itself (shapes/badges weren't designed to
+stay inside that circle), fixed and pushed to
+[PR #13](https://github.com/Twin-Cities-Open-Systems/MT-logo-render/pull/13).
+`avatar.png` here is the corrected render -- verified by overlaying the
+inscribed circle and confirming full containment.
