@@ -1,0 +1,9 @@
+seed = f"{github_id}:{github_node_id}:{created_at}" = 316772270:U_kgDOEuGPrg:2026-08-14T01:05:22Z
+sha256(seed) = cbd1b0125c855a840cfaa295b559512cfabc22da957831402dc15cc22baaa47b
+
+base_color   = hex[0:6]  = cbd1b0
+accent_color = hex[6:12] = 125c85
+shape  = shapes[byte(6) % 4]  = byte(6)=90 -> triangle
+fill   = fill_kinds[byte(7) % 4] = byte(7)=132 -> solid
+mark   = marks[byte(9) % 4]   = byte(9)=250 -> dot
+badge  = badges[byte(10) % 3] = byte(10)=162 -> corner-dot
